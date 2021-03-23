@@ -89,6 +89,7 @@ curl https://www.publicdomainpictures.net/pictures/10000/velka/296-1246658839vCW
 <br>
 <br>
 # 4 Create Dataproc Cluster
+
 1. Run the following commands in the SSH window:
 ```
 MYCLUSTER="${USER/_/-}-qwiklab"
@@ -96,6 +97,7 @@ MYCLUSTER="${USER/_/-}-qwiklab"
 ```
 echo MYCLUSTER=${MYCLUSTER}
 ```
+
 2. Set a global Compute Engine region to use and create a new cluster:
 ```
 gcloud config set dataproc/region us-central1
