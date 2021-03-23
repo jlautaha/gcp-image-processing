@@ -108,11 +108,14 @@ gcloud dataproc clusters create ${MYCLUSTER} --bucket=${MYBUCKET} --worker-machi
 <br>
 <br>
 # 5 Submit job to Cloud Dataproc
+
 1. Run command in SSH window:
 ```
 curl https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml | gsutil cp - gs://${MYBUCKET}/haarcascade_frontalface_default.xml
 ```
+
 2. Submit job to Dataproc:
+
 ```
 cd ~/cloud-dataproc/codelabs/opencv-haarcascade
 ```
@@ -124,4 +127,5 @@ gs://${MYBUCKET}/haarcascade_frontalface_default.xml \
 gs://${MYBUCKET}/imgs/ \
 gs://${MYBUCKET}/out/
 ```
+
 3. When the job is complete, go to Navigation menu > Storage and find the bucket you created (it will have your username followed by student-image followed by a random number) and click on it. Then click on an image in the Out directory. Click on Download icon, the image will download to your computer.
